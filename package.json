@@ -1,0 +1,36 @@
+{
+  "name": "os-status-backend",
+  "version": "1.0.0",
+  "description": "Simple application fetching some of the system info",
+  "main": "./src/main.ts",
+  "engines": {
+    "node": ">= 18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "quickstart": "npm install && npm run test && npm run build && npm run start",
+    "setup": "npm install && npm run test && npm run build",
+    "start": "node ./build/main.js",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurut08/test2.git"
+  },
+  "private": true,
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.17",
+    "@types/express": "5.0.1",
+    "@types/jest": "29.5.14",
+    "@types/node": "22.14.1",
+    "@types/supertest": "6.0.3",
+    "jest": "29.7.0",
+    "supertest": "7.1.0",
+    "ts-jest": "29.3.1",
+    "typescript": "5.8.3"
+  }
+}

@@ -1,0 +1,11 @@
+name: os-status-backend
+
+services:
+  os-status:
+    container_name: os-status-backend
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "3005:3005"
+    restart: unless-stopped
