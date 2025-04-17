@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/kurut08/os-status-backend/graph/badge.svg?token=U2KRYU8BB9)](https://codecov.io/gh/kurut08/os-status-backend)
+[![codecov](https://codecov.io/gh/kurut08/test2/graph/badge.svg?token=U2KRYU8BB9)](https://codecov.io/gh/kurut08/test2)
 
 # What is OS Status Backend?
 It's a small application exposing couple endpoints letting you get some info about the machine it's running on.
