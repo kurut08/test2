@@ -32,5 +32,13 @@ describe('System Info API', () => {
                 expect(response.body.toString()).toMatch(/^\d{1,3}(\.\d{1,2})?$/);
             });
         });
+
+        describe('/cpu-core-usage', () => {
+            test('/cpu-core-usage should return a text message if ID is not specified', async () => {
+                const response = await request(app).get('/cpu-core-usage');
+                expect(response.statusCode).toBe(400);
+                expect(response.body).toEqual({ error: 'CPU Core not specified.' });
+            });
+        });
     });
 });
